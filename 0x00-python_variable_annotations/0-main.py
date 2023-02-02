@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-import math
+to_kv = __import__('7-to_kv').to_kv
 
-floor = __import__('2-floor').floor
-
-ans = floor(3.14)
-
-print(ans == math.floor(3.14))
-print(floor.__annotations__)
+print(to_kv.__annotations__)
+print(to_kv("eggs", 3))
+print(to_kv("school", 0.02))
