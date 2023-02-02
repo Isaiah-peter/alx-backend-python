@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
-"""A  type-annotated function make_multiplier that takes a
-float multiplier as argument and
-returns a function that multiplies a float by multiplier."""
-
-
+"""
+    Callable function
+"""
 from typing import Callable
 
+
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Construct a function"""
-    return
+    """
+        Args:
+            multiplier: factor
+        Return:
+            multiplication in float
+    """
+
+    def x(f: float) -> float:
+        """ Get the second argument somthing like JS """
+        return float(f * multiplier)
+
+    return x
