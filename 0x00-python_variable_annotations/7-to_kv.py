@@ -6,6 +6,8 @@ The second element is the square of the int/float v and should be annotated as a
 """
 
 from typing import Union, Tuple
+
+
 def to_kv(k: str, v: Union[int, float]) -> Tuple[Union[str, float ]]:
     """return tuples of string float"""
     return tuple([k, v])
