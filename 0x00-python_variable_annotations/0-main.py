@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
-element_length =  __import__('9-element_length').element_length
+to_kv = __import__('7-to_kv').to_kv
 
-print(element_length.__annotations__)
+print(to_kv.__annotations__)
+print(to_kv("eggs", 3))
+print(to_kv("school", 0.02))
